@@ -35,7 +35,7 @@ int main() {
 				scanf(" %c", &mouth);
 
 				// Read the face size and validate it's a positive odd number
-				printf("Enter face zize:\n");
+				printf("Enter face size:\n");
 				scanf("%d", &faceSize);
 
 				while (faceSize <= 0 || faceSize % 2 == 0) {
@@ -60,7 +60,7 @@ int main() {
 				for (int i = 0; i < faceSize; i++) {
 					printf("%c", mouth);
 				}
-				printf("/\n");
+				printf("\n");
 
 				break;
 			
@@ -106,12 +106,13 @@ int main() {
 
 				// Print the appropriate message
 				if (is_balanced) {
-					printf("The number is balanced and brings harmony!\n");
+					printf("This number is balanced and brings harmony!\n");
 				}
 				else {
 					printf("This number isn't balanced and destroys harmony.\n");
 				}
 
+				printf("\n");
 				break;
 
 
@@ -139,6 +140,7 @@ int main() {
 				else {
 					printf("This number does not share.\n");
 				}
+				printf("\n");
 				break;
 			
 	
@@ -167,6 +169,7 @@ int main() {
 					printf("The circle remains incomplete.\n");
 				}
 
+				printf("\n");
 				break;
 
 			
@@ -180,7 +183,7 @@ int main() {
 				}
 				// Chech for happy numbers
 				int sum_of_squares, num_copy, d, flag;
-				printf("Between 1 and %d only these numbers bring happiness:", number);
+				printf("Between 1 and %d only these numbers bring happiness: ", number);
 				for (int i = 1; i < number; i++) {
 					flag = 0;
 					num_copy = i;
@@ -199,7 +202,7 @@ int main() {
 						num_copy = sum_of_squares;
 					}
 					if (flag) {
-						printf("%d", i);
+						printf(" %d", i);
 					}
 				}
 				printf("\n");
@@ -244,6 +247,7 @@ int main() {
 						printf("%d ", i);
 					}
 				}
+				        printf("\n");
 					break;
 
 					case 7:

@@ -243,6 +243,7 @@ int main() {
 					else {
 						printf("%d ", i);
 					}
+				}
 					break;
 
 					case 7:
@@ -254,8 +255,7 @@ int main() {
 						printf("This option is not available, please try again.\n");
 						break;
 				}
-		} 
-		while (option != 7);  // Repeat until the user selects Exit
+		} while (option != 7);  // Repeat until the user selects Exit
 		
 	return 0;
 }

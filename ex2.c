@@ -247,7 +247,7 @@ int main() {
 
 					case 7:
 						// Exit the program
-						print("Thank you for your journey through Numeria!\n");
+						printf("Thank you for your journey through Numeria!\n");
 						break;
 					default:
 						// Handle invalid menu options

@@ -1,6 +1,6 @@
 /******************
-Name:
-ID:
+Name:Maya Mattar
+ID:213510407
 Assignment: ex2
 *******************/
 
@@ -8,21 +8,63 @@ Assignment: ex2
 
 int main() {
 	// Case 1: Draw Happy Face with given symbols for eyes, nose and mouse
-	/* Example:
-	* n = 3:
-	* 0   0
-	*   o
-	* \___/
-	*/
-    
+        int option, num, number;
+	do {
+		printf("Choose an option:\n");
+		printf("\t1. Happy Face\n");
+		printf("\t2. Balanced Number\n");
+		printf("\t3. Generous Number\n");
+		printf("\t4. Circle Of Joy\n");
+		printf("\t5. Happy Numbers\n");
+		printf("\t6. Festival Of Laughter\n");
+		printf("\t7. Exit\n");
+
+		scanf("%d", &option);
+
+		switch (option) {
+			case 1:
+				printf("Enter symbols for the eyes, nose, and mouth: \n");
+				char eye, nose, mouth;
+				int faceSize;
+				scanf(" %c", &eye);
+				scanf(" %c", &nose);
+				scanf(" %c", &mouth);
+
+				printf("Enter face zize: \n");
+				scanf("%d", &faceSize);
+
+				while (faceSize <= 0 || faceSize % 2 == 0) {
+					printf("The face's size must be an odd and positive number, please try again:\n");
+					scanf("%d", &faceSize);
+				}
+				// Print the eyes
+				printf("%c", eye);
+				for (int i = 0; i < faceSize; i++) {
+					printf(" ");
+				}
+				printf("%c\n", eye);
+
+				// Nose
+				for (int i = 0; i < (faceSize / 2) + 1; i++) {
+					printf(" ");
+				}
+				printf("%c\n", nose);
+
+				// Mouth
+				printf("\\");
+				for (int i = 0; i < faceSize; i++) {
+					printf("%c", mouth);
+				}
+				printf("/\n");
+
+				break;
+			
+					
 
 	// Case 2: determine whether the sum of all digits to the left of the middle digit(s)
+				
 	// and the sum of all digits to the right of the middle digit(s) are equal
-	/* Examples:
-	Balanced: 1533, 450810, 99
-	Not blanced: 1552, 34
-	Please notice: the number has to be bigger than 0.
-	*/
+	
 
 	// Case 3: determine whether the sum of the proper divisors (od an integer) is greater than the number itself
 	/* Examples:

@@ -60,7 +60,7 @@ int main() {
 				for (int i = 0; i < faceSize; i++) {
 					printf("%c", mouth);
 				}
-				printf("\n");
+				printf("/\n");
 
 				break;
 			
@@ -235,13 +235,13 @@ int main() {
 				// Print numbers or replace them with the aprropriate strings
 				for (int i = 1; i <= n; i++) {
 					if (i % smileNumber == 0 && i % cheerNumber == 0) {
-						printf("Festival! ");
+						printf("Festival! \n");
 					}
 					else if (i % smileNumber == 0) {
-						printf("Smile! ");
+						printf("Smile! \n");
 					}
 					else if (i % cheerNumber == 0) {
-						printf("Cheer! ");
+						printf("Cheer! \n");
 					}
 					else {
 						printf("%d ", i);

@@ -160,8 +160,36 @@ int main() {
 					is_prime == 0; 
 				} else {
 					for (int i = 2; i * i <= number; i++) {
+						if (number % i == 0) {
+							is_prime = 0;
+							break;
+						}
+					}
+				}
+				// Reverse the number
+				temp = number;
+				while (temp > 0) {
+					reversed_number = reversed_number * 10 + temp % 10;
+					temp /= 10;
+				}
+				// Check if reversed number is prime
+				if (reversed_number == 1) {
+					is_reverse_prime = 0;
+				} else {
+					for (int i = 2; i * i <= reversed_number; i++) {
+						if (reversed_number % i == 0) {
+							is_reverse_prime = 0;
+						break;
+						}
+					}
+				}
+				// Outout the result
+				if (is_prime && is_reverse_prime) {
+					printf("This number completes the circle of joy!\n");
+				} else {
+					printf("The circle remains incomplete.\n");
+				}
 				
-
 				printf("\n");
 				break;
 

@@ -244,7 +244,7 @@ int main() {
 						printf("Cheer! \n");
 					}
 					else {
-						printf("%d ", i);
+						printf("%d\n ", i);
 					}
 				}
 				        printf("\n");

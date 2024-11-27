@@ -147,7 +147,7 @@ int main() {
 			case 4:
 				// Circle of Joy: Check if a number and its reverse are both prime
 				printf("Enter a number:\n");
-				int is_prime = 1;
+				int is_prime = 1, is_reverse_prime = 1, reversed_number = 0, temp;
 				
 				// Read the number and validate it's positive
 				scanf("%d", &number);
@@ -156,20 +156,11 @@ int main() {
 					scanf("%d", &number);
 				}
 				// Check if the number is prime
-				for (int i = 2; i * i <= number; i++)
-					{
-						if (number % i == 0) {
-							is_prime = 0;
-						break;
-						}
-					}
-				// Print the result
-				if (is_prime == 1 && number != 1) {
-					printf("This number completes the circle of joy!\n");
-				}
-				else {
-					printf("The circle remains incomplete.\n");
-				}
+				if (number == 1) {
+					is_prime == 0; 
+				} else {
+					for (int i = 2; i * i <= number; i++) {
+				
 
 				printf("\n");
 				break;

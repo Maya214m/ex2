@@ -158,8 +158,10 @@ int main() {
 				// Check if the number is prime
 				for (int i = 2; i * i <= number; i++)
 					{
-						if (number % i == 0)
+						if (number % i == 0) {
 							is_prime = 0;
+						break;
+						}
 					}
 				// Print the result
 				if (is_prime == 1 && number != 1) {
